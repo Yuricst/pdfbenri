@@ -68,5 +68,5 @@ def download_file(flepath, dest="./", filename=None, extension=None):
 
 if __name__=="__main__":
     url = "https://bb.imperial.ac.uk/webapps/blackboard/content/listContent.jsp?course_id=_9819_1&content_id=_1016622_1"
-    destination = r"C:\Users\yurio\Google Drive\reflibs\LectureNotes\imperial_ae107"
+    destination = r"./"
     get_files(url, destination, extension='pdf')

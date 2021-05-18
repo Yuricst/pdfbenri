@@ -6,9 +6,9 @@ Dependency: PyPDF2
 import PyPDF2
 
 
-def rotate(pdffle, clockwise_angle=90):
+def rotate(filepath, clockwise_angle=90):
 	"""Function to rotate pdf"""
-	pdf_in = open(pdffle, 'rb')
+	pdf_in = open(filepath, 'rb')
 	pdf_reader = PyPDF2.PdfFileReader(pdf_in)
 	pdf_writer = PyPDF2.PdfFileWriter()
 

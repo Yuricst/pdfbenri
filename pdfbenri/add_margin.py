@@ -13,16 +13,16 @@ from tqdm import tqdm
 
 
 
-def add_margin(path, side_margin=50, height_margin=40):
+def add_margin(filepath, side_margin=50, height_margin=40):
     """
     Add margin to pdf
 
     Args:
-        path (string)
+        filepath (string)
         side_margin (int): 
         height_margin (int): 
     """
-    with open(path, 'rb') as f:
+    with open(filepath, 'rb') as f:
         p = PdfFileReader(f)
         info = p.getDocumentInfo()
         number_of_pages = p.getNumPages()
@@ -43,6 +43,6 @@ def add_margin(path, side_margin=50, height_margin=40):
 
 
 if __name__ == '__main__':
-    path = 't.pdf'
+    filepath = 'test.pdf'
     filepath = input('.pdf file to add margin: ')
-    add_margin(path)
+    add_margin(filepath)
