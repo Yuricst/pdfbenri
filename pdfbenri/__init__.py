@@ -1,14 +1,16 @@
 """
-Custom function for pdf handling
+pdfbenri
+
+Custom module for PDF handling. Bundling couple of PDF-handling packages: 
+- PyPDF2 (https://pythonhosted.org/PyPDF2/)
+- pdfrw (https://pypi.org/project/pdfrw/)
+- pdf2image (https://github.com/Belval/pdf2image)
 """
 
 
 # ----------------- documentation and dependencies settings ----------------- #
-# # ... currently adopted from pandas init: https://github.com/pandas-dev/pandas/blob/master/pandas/__init__.py
-# __docformat__ = "restructuredtext"
-
 # Let users know if they're missing any of our hard dependencies
-hard_dependencies = ("PyPDF2", "tqdm", "pdfrw", "glob", "reportlab")
+hard_dependencies = ("PyPDF2", "tqdm", "pdfrw", "glob", "reportlab", "shutil", "pdf2image")
 missing_dependencies = []
 
 for dependency in hard_dependencies:
@@ -29,3 +31,4 @@ from .add_margin import add_margin
 from .merge import merge
 from .online_fetch import get_files, download_file
 from .pdf2img import pdf2img 
+from .rotate import rotate

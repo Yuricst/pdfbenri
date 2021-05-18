@@ -6,7 +6,7 @@ Dependency: PyPDF2
 import PyPDF2
 
 
-def rotate_pdf(pdffle, clockwise_angle=90):
+def rotate(pdffle, clockwise_angle=90):
 	"""Function to rotate pdf"""
 	pdf_in = open(pdffle, 'rb')
 	pdf_reader = PyPDF2.PdfFileReader(pdf_in)
@@ -38,6 +38,5 @@ if __name__ == "__main__":
 		clockwise_angle = sys.argv[2]
 	else:
 		clockwise_angle = 90
-
-	rotate_pdf(filepath, clockwise_angle)
+	rotate(filepath, clockwise_angle)
 
