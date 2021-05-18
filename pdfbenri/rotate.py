@@ -7,7 +7,12 @@ import PyPDF2
 
 
 def rotate(filepath, clockwise_angle=90):
-	"""Function to rotate pdf"""
+	"""Function to rotate pdf
+
+	Args:
+		filepath (str): path to the pdf file, including file name and extension (.pdf)
+		clockwise_angle (float): rotation angle clockwise, in degrees
+	"""
 	pdf_in = open(filepath, 'rb')
 	pdf_reader = PyPDF2.PdfFileReader(pdf_in)
 	pdf_writer = PyPDF2.PdfFileWriter()

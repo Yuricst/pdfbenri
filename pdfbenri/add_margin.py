@@ -18,9 +18,9 @@ def add_margin(filepath, side_margin=50, height_margin=40):
     Add margin to pdf
 
     Args:
-        filepath (string)
-        side_margin (int): 
-        height_margin (int): 
+        filepath (str): path to the pdf file, including file name and extension (.pdf)
+        side_margin (int): side-margins (left & right)
+        height_margin (int): height-margins (top & bottom)
     """
     with open(filepath, 'rb') as f:
         p = PdfFileReader(f)
