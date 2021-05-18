@@ -13,7 +13,7 @@ from tqdm import tqdm
 
 
 
-def add_margin(path, side_margin=30, height_margin=0):
+def add_margin(path, side_margin=50, height_margin=40):
     """
     Add margin to pdf
 
