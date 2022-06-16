@@ -12,6 +12,7 @@ The `pdfbenri` module provides functions to:
 #### Fetch from online
 #### Rotate
 #### Add margin
+#### Select pages
 
 ## Dependencies
 Dependencies for this module are
