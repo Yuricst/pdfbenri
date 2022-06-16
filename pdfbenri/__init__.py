@@ -32,3 +32,4 @@ from .merge import merge
 from .online_fetch import get_files, download_file
 from .pdf2img import pdf2img 
 from .rotate import rotate
+from .select_pages import select_pages

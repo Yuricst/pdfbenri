@@ -5,8 +5,6 @@ Thanks to:
 https://gist.github.com/polonez/1fc01988935607b57f6ddcd7753acc7a
 """
 
-
-
 from PyPDF2 import PdfFileReader, PdfFileWriter
 from PyPDF2.pdf import PageObject
 from tqdm import tqdm
